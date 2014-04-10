@@ -9,6 +9,8 @@ import com.estimote.sdk.Beacon;
 import com.estimote.sdk.BeaconManager;
 import com.estimote.sdk.Region;
 import com.estimote.sdk.Utils;
+import android.app.Activity;
+import android.content.Intent;
 
 /**
  * This class echoes a string called from JavaScript.
@@ -30,7 +32,7 @@ public class BeaconPlugin extends CordovaPlugin {
 
     private void startRanging(CallbackContext callbackContext) {
 	
-		beaconManager = new BeaconManager(this);
+		beaconManager = new BeaconManager(this.cordova.getActivity());
 		 if (!beaconManager.isBluetoothEnabled()) {
 		     callbackContext.error("Bluetooth failure");
 		 }
