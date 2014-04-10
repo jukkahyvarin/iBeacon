@@ -1,1 +1,1 @@
-Trying to create plugin for estimote beacons
+Trying to create a plugin for estimote beacons
