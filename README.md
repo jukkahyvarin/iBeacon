@@ -1,0 +1,1 @@
+Trying to create plugin for estimote beacons
