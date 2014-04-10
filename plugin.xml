@@ -21,6 +21,6 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/Beacon.java" target-dir="src/com/jhyvarin/ibeacon" />      
+        <source-file src="src/android/BeaconPlugin.java" target-dir="src/com/jhyvarin/ibeacon" />      
      </platform>          
 </plugin>
